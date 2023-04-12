@@ -7,16 +7,26 @@ import streamlit_authenticator as stauth
 
 import os
 
+import joblib
+from io import BytesIO
+
+import requests # or https
+
 st.set_page_config(page_title="Basic Info Prediction", page_icon=":📚:", layout="wide")
 
 
 # loading the saved models
-basic_model = pickle.load(open('model.pkl', 'rb'))
+#basic_model = pickle.load(open('model.pkl', 'rb'))
 #basic_model = pickle.load(open('multi_pred/pages/model.pkl','rb'))
 
 #location = r'C:\Users\poova\Desktop\multi_pred\pages'
 #fullpath = os.path.join(location,'model.pkl')
 #basic_model = pickle.load(open(fullpath,'rb'))  
+
+
+URI = "https://github.com/PoovarasanKG/Multi-Student-Placement-/blob/main/pages/model.pkl"
+basic_model = joblib.load(BytesIO(requests.get(URI).content))
+
 
 st.title('Student Placement Prediction Application')
 
