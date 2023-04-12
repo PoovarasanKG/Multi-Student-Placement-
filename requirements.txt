@@ -3,3 +3,9 @@ streamlit==1.18.1
 pickle-mixin==1.0.2
 scikit-learn==1.2.1
 streamlit-option-menu==0.3.2
+pandas
+Path
+streamlit_authenticator
+os
+matplotlib.pyplot
+plotly.express
