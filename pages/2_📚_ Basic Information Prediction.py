@@ -25,7 +25,8 @@ st.set_page_config(page_title="Basic Info Prediction", page_icon=":📚:", layou
 
 
 URI = "https://github.com/PoovarasanKG/Multi-Student-Placement-/blob/main/pages/model.pkl"
-basic_model = joblib.load(BytesIO(requests.get(URI).content))
+basic_model = pickle.load(open('URI', 'rb'))
+#joblib.load(BytesIO(requests.get(URI).content))
 
 
 st.title('Student Placement Prediction Application')
