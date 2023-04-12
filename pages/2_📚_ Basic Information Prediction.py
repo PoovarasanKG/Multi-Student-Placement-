@@ -6,10 +6,12 @@ from pathlib import Path
 import streamlit_authenticator as stauth
 
 from io import BytesIO
+import io
+from bytesbufio import BytesBufferIO
 import requests # or https
 
 mLink = 'https://github.com/PoovarasanKG/Multi-Student-Placement-/blob/main/pages/model.pkl?raw=true'
-mfile = BytesIO(requests.get(mLink).content)
+mfile = BytesBufferIO(requests.get(mLink).content)
 basic_model = pickle.load(mfile)
 
 st.set_page_config(page_title="Basic Info Prediction", page_icon=":📚:", layout="wide")
