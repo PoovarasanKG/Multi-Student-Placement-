@@ -3,6 +3,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
 
+hide_st_style = """ <style> #MainMenu {visibility: hidden;} 
+footer {visibility: hidden;} header {visibility: hidden;} 
+</style> 
+""" 
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.set_page_config(page_title="Graphical View", page_icon=":♨:", layout="wide")
 
 st.header("Multi Graphical View")
