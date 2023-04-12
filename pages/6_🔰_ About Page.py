@@ -16,7 +16,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 st.header(":gear: About Me!")
-st.write('''MSPP - Multi Student Placement Prediction System v1.0. - 
+st.write('''SPARKA - Multi Student Placement Prediction System v1.0. - 
 Its an STREAMLIT based web Application. \n
 developed by, \n
 Poovarasan K  \n
