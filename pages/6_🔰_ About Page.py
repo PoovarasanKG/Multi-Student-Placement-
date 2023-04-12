@@ -5,6 +5,12 @@ import pandas as pd
 from pathlib import Path
 import streamlit_authenticator as stauth
 
+hide_st_style = """ <style> #MainMenu {visibility: hidden;} 
+footer {visibility: hidden;} header {visibility: hidden;} 
+</style> 
+""" 
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.set_page_config(page_title="About Page", page_icon=":🔰:", layout="wide")
 
 
