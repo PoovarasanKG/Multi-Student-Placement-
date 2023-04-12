@@ -9,5 +9,4 @@ streamlit_authenticator
 matplotlib
 plotly.express
 requests
-io
 BytesIO
