@@ -13,12 +13,11 @@ st.set_page_config(page_title="Basic Info Prediction", page_icon=":📚:", layou
 # loading the saved models
 basic_model = pickle.load(open('model.pkl', 'rb'))
 #basic_model = pickle.load(open('multi_pred/pages/model.pkl','rb'))
-'''
-location = r'C:\Users\poova\Desktop\multi_pred\pages'
-fullpath = os.path.join(location,'model.pkl')
-basic_model = pickle.load(open(fullpath,'rb'))  
 
-'''
+#location = r'C:\Users\poova\Desktop\multi_pred\pages'
+#fullpath = os.path.join(location,'model.pkl')
+#basic_model = pickle.load(open(fullpath,'rb'))  
+
 st.title('Student Placement Prediction Application')
 
 html_temp ="""
