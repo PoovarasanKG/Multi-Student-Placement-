@@ -10,6 +10,13 @@ import io
 from bytesbufio import BytesBufferIO
 import requests # or https
 
+
+hide_st_style = """ <style> #MainMenu {visibility: hidden;} 
+footer {visibility: hidden;} header {visibility: hidden;} 
+</style> 
+""" 
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 mLink = 'https://github.com/PoovarasanKG/Multi-Student-Placement-/blob/main/pages/model.pkl?raw=true'
 mfile = BytesBufferIO(requests.get(mLink).content)
 basic_model = pickle.load(mfile)
