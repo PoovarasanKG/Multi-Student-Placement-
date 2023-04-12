@@ -6,6 +6,15 @@ from pathlib import Path
 import streamlit_authenticator as stauth
 import os
 
+from io import BytesIO
+import io
+from bytesbufio import BytesBufferIO
+import requests # or https
+
+mLink = 'https://github.com/PoovarasanKG/Multi-Student-Placement-/blob/main/pages/model_place.pkl?raw=true'
+mfile = BytesBufferIO(requests.get(mLink).content)
+place_model = pickle.load(mfile)
+
 
 st.set_page_config(page_title="Placement Info Prediction", page_icon=":📄:", layout="wide")
 
@@ -13,9 +22,9 @@ st.set_page_config(page_title="Placement Info Prediction", page_icon=":📄:", l
 # loading the saved models
 #place_model = pickle.load(open('model_place.pkl', 'rb'))
 
-location = r'C:\Users\poova\Desktop\multi_pred\pages'
-fullpath = os.path.join(location,'model_place.pkl')
-place_model = pickle.load(open(fullpath,'rb'))
+#location = r'C:\Users\poova\Desktop\multi_pred\pages'
+#fullpath = os.path.join(location,'model_place.pkl')
+#place_model = pickle.load(open(fullpath,'rb'))
 
 st.title('Student Placement Prediction Application')
 html_temp = """
