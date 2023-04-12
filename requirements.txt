@@ -6,6 +6,5 @@ streamlit-option-menu==0.3.2
 pandas
 Path
 streamlit_authenticator
-os
 matplotlib.pyplot
 plotly.express
