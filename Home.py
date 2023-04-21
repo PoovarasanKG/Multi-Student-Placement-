@@ -26,6 +26,16 @@ hide_bar= """
     }
     </style>
 """
+st.title("The title")
+title_alignment=
+"""
+<style>
+#the-title {
+  text-align: center
+}
+</style>
+"""
+st.markdown(title_alignment, unsafe_allow_html=True)
 
 #--- USER AUTHNTICATION --- 
 
