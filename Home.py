@@ -26,7 +26,7 @@ hide_bar= """
     }
     </style>
 """
-st.title("The title")
+st.title("SPARKA - Multi Student Placement Prediction System")
 title_alignment=""" <style> 
 #the-title {
   text-align: center
