@@ -27,9 +27,7 @@ hide_bar= """
     </style>
 """
 st.title("The title")
-title_alignment=
-"""
-<style>
+title_alignment=""" <style> 
 #the-title {
   text-align: center
 }
