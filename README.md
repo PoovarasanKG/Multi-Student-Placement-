@@ -13,8 +13,6 @@ A sparka application using `Python` and `Streamlit` using `KNN - Algorithm`.
 
 ## Screenshots
 
-### User mobile app
-
 <details>
     <summary>View Screenshots</summary>
     <br>
