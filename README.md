@@ -1,15 +1,15 @@
-# Multi-Student-Placement-
+# SPARKA - Multi Student Placement Prediction System
 multiple placement prediction app
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sparka.streamlit.app/)
 Click the 👈 open in streamlit icon to View my Web application!
 
-
-
-A movie tickets booking and management application using `Flutter` and `NestJS`.
+A sparka application using `Python` and `Streamlit` using `KNN - Algorithm`.
 
 ## Features
 
--   Firebase authentication, socket.io.
+-   Created an online streaming web application to forecast student placement possibilities based on their academic and placement information.
+-   Implemented machine learning techniques for prediction.
+
 
 ## Screenshots
 
